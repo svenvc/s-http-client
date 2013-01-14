@@ -1,16 +1,12 @@
-### Open Source Common Lisp Software
-
 S-HTTP-CLIENT
 =============
 
 A Basic HTTP Client
 -------------------
 
-[S-HTTP-CLIENT](http://homepage.mac.com/svc/temaplte/index.html) is
+`S-HTTP-CLIENT` is a
 basic implementation of a Common Lisp HTTP Client. This simple package
-is used as a building block in a number of other open source projects,
-as can be seen from this description of some [other Open Source Common
-Lisp packages](http://homepage.mac.com/svc/oscl.html).
+is used as a building block in a number of other open source projects.
 
 ### Contents
 
@@ -35,7 +31,7 @@ Lisp packages](http://homepage.mac.com/svc/oscl.html).
 
 ### Features
 
-S-HTTP-CLIENT can:
+`S-HTTP-CLIENT` can:
 
 -   access any URL over HTTP/HTTPS using any HTTP verb
 -   support connection reuse
@@ -43,52 +39,26 @@ S-HTTP-CLIENT can:
 
 ### Status
 
-S-HTTP-CLIENT is considered stable code.
+`S-HTTP-CLIENT` is considered stable code.
 
 ### News
 
--   *December 2005* - S-HTTP-CLIENT was featured in my first [Lisp
+-   *December 2005* - `S-HTTP-CLIENT` was featured in my first [Lisp
     Movie: Episode 1: HTTP Client and
     Server](http://homepage.mac.com/svc/LispMovies/index.html).
--   *November 2005* - Created as a seperate project.
+-   *November 2005* - Created as a separate project.
 
 ### Platforms
 
-S-HTTP-CLIENT is written in ANSI standard Common Lisp and should be
-portable across any CL implementation, provided parts of S-SYSDEPS are
+`S-HTTP-CLIENT` is written in ANSI standard Common Lisp and should be
+portable across any CL implementation, provided parts of `S-SYSDEPS` are
 ported.
-
-### Downloading
-
-You can download the latested released tarball of the S-HTTP-CLIENT
-package from
-[http://homepage.mac.com/svc/s-http-client/s-http-client.tar.gz](http://homepage.mac.com/svc/s-http-client/s-http-client.tar.gz).
-This archive is signed on release by [Sven Van
-Caekenberghe](http://homepage.mac.com/svc), whose public key is
-published at
-[http://homepage.mac.com/svc/sven-public-ascii.gpg](http://homepage.mac.com/svc/sven-public-ascii.gpg),
-the signature is in
-[http://homepage.mac.com/svc/s-http-client/s-http-client.tar.gz.asc](http://homepage.mac.com/svc/s-http-client/s-http-client.tar.gz.asc).
-
-Alternatively you can access the [DARCS](http://abridgegame.org/darcs/)
-repository at
-[http://www.beta9.be/darcs/s-base64](http://www.beta9.be/darcs/s-base64).
-For a good description on how to use DARCS see
-[http://dirkgerrits.com/programming/erlisp/download/](http://dirkgerrits.com/programming/erlisp/download/).
-
-    $ darcs get http://www.beta9.be/darcs/s-http-client
-
-Example of basic darcs usage, get everything once and keep up to date by
-pulling in changes
 
 ### Installation
 
-The S-HTTP-CLIENT package is loaded using
+The `S-HTTP-CLIENT` package is loaded using
 [ASDF](http://www.cliki.net/asdf). There is an excellent [tutorial on
-ASDF](http://constantly.at/lisp/asdf/) to get you started. Alternatively
-you can use [ASDF-INSTALL](http://www.cliki.net/asdf-install). There is
-an great [tutorial on ASDF-INSTALL](http://weitz.de/asdf-install/) to
-get you on the way.
+ASDF](http://constantly.at/lisp/asdf/) to get you started.
 
     CL-USER 1 > (asdf:oos 'asdf:load-op :s-http-client)
 
@@ -96,7 +66,7 @@ Example of setting up and using ASDF to compile and load the package
 
 ### Usage
 
-Just call DO-HTTP-REQUEST with the necessary arguments. For example:
+Just call `DO-HTTP-REQUEST` with the necessary arguments. For example:
 
     CL-USER 1 > (in-package :s-http-client)
     #<The S-HTTP-CLIENT package, 59/128 internal, 5/16 external>
@@ -123,8 +93,6 @@ Just call DO-HTTP-REQUEST with the necessary arguments. For example:
     #<URI http://homepage.mac.com:80/svc/s-http-client/foo.html>
     :NEW
 
-Example DO-HTTP-REQUEST Usage
-
 In principle, any HTTP verb is allowed. It is the easiest to specify
 them as keywords. In the case of :POST or :PUT, content as well as a
 content-type should be specified (content length will be calculated).
@@ -140,7 +108,7 @@ also implemented.
 ### API Reference
 
 There is automatically generated [API Reference](API.html) documentation
-available for the S-HTTP-CLIENT package.
+available for the `S-HTTP-CLIENT` package.
 
 ### Mailinglist
 
@@ -150,7 +118,7 @@ There is no mailing list for this project.
 
 Release Notes:
 
--   release 1: moved S-HTTP-CLIENT into a seperate project under a new
+-   release 1: moved `S-HTTP-CLIENT` into a seperate project under a new
     structure
 
 ### TODO
@@ -168,13 +136,13 @@ Nothing appropriate.
 
 ### Authors
 
-S-HTTP-CLIENT was written by [Sven Van
-Caekenberghe](http://homepage.mac.com/svc).
+`S-HTTP-CLIENT` was written by Sven Van
+Caekenberghe.
 
 ### Maintainers
 
-S-HTTP-CLIENT is being maintained by [Sven Van
-Caekenberghe](http://homepage.mac.com/svc).
+`S-HTTP-CLIENT` is being maintained by Sven Van
+Caekenberghe.
 
 ### License
 
@@ -189,9 +157,7 @@ This is a new project.
 
 ### References
 
-Thera are no references.
+There are no references.
 
 Copyright © 2005 Sven Van Caekenberghe, Beta Nine BVBA. All Right
-Reserved. - [This page is W3C Valid XHTML 1.0
-Strict](http://validator.w3.org/check/referer) - [Viewable With Any
-Browser](http://www.anybrowser.org/campaign/)
+Reserved.
