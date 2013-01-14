@@ -1,8 +1,6 @@
-S-HTTP-CLIENT
-=============
+# S-HTTP-CLIENT
 
-A Basic HTTP Client
--------------------
+## A Common Lisp HTTP Client
 
 `S-HTTP-CLIENT` is a
 basic implementation of a Common Lisp HTTP Client. This simple package
@@ -45,7 +43,7 @@ is used as a building block in a number of other open source projects.
 
 -   *December 2005* - `S-HTTP-CLIENT` was featured in my first [Lisp
     Movie: Episode 1: HTTP Client and
-    Server](http://homepage.mac.com/svc/LispMovies/index.html).
+    Server](http://homepage.mac.com/svc/LispMovies/index.html) [dead-link].
 -   *November 2005* - Created as a separate project.
 
 ### Platforms
