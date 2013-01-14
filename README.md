@@ -105,8 +105,8 @@ also implemented.
 
 ### API Reference
 
-There is automatically generated [API Reference](API.html) documentation
-available for the `S-HTTP-CLIENT` package.
+There is automatically generated in documentation
+available for the `S-HTTP-CLIENT` package in `doc/API.html`
 
 ### Mailinglist
 
