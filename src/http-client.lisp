@@ -359,7 +359,8 @@
       (s-base64:encode-base64-bytes (map 'vector 
                                          #'char-code 
                                          (format nil "~a:~a" username password)) 
-                                    out))))
+                                    out
+                                    nil))))
 
 ;; high level HTTP protocol
 
