@@ -516,7 +516,7 @@
 ;; our own uri encoding implementation (ascii only, not that efficient, eager to be safe)
 
 (defparameter +uri-encode-char-map+
-  (let ((map (make-array '(127) :element-type 'boolean)))
+  (let ((map (make-array '(127) :element-type 'boolean :initial-element nil)))
     (flet ((allow-range (from to)
              (loop :for i :upfrom (char-code from) :upto (char-code to) 
                    :do (setf (aref map i) t))))
